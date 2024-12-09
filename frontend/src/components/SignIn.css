@@ -1,0 +1,67 @@
+.signIn {
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSB1lN1hGZAj0MpZ1ZoN7tt7q38JyzTvjmSMQ&usqp=CAU");
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 90vh;
+    margin: 10px 10px;
+    border-radius: 10px
+  }
+  
+  .loginForm {
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 30px;
+    border: 1px solid rgb(129, 121, 121);
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  .signUpLogo {
+    display: block;
+    margin: 0 auto;
+    max-width: 150px;
+  }
+  
+  input[type="email"],
+  input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  #login-btn {
+    background-color: #1773ea;
+    border: none;
+    border-radius: 3px;
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+    width: 100%;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  #login-btn:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  
+  #login-btn:not(:disabled):hover {
+    background-color: #145a8c;
+  }
+  
+  .loginForm2 {
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  .loginForm2 span {
+    color: blue;
+    cursor: pointer;
+  }
+  

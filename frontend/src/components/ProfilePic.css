@@ -1,0 +1,96 @@
+/* ProfilePic.css */
+.profilePic {
+    position: fixed; /* Fixed to the screen */
+    top: 0;
+    left: 0;
+    width: 100vw; /* Full width of the viewport */
+    height: 100vh; /* Full height of the viewport */
+    background-color: rgba(0, 0, 0, 0.6); /* Dark semi-transparent background */
+    display: flex; /* Enable flexbox */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    z-index: 1000; /* Ensure modal is on top */
+    animation: fadeIn 0.3s ease-out; /* Fade-in animation */
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  .changePic {
+    background-color: #fff;
+    padding: 20px 30px;
+    border-radius: 12px;
+    width: 300px; /* Fixed width for the modal */
+    max-width: 100%; /* Responsive */
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); /* Shadow effect */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-height: 400px; /* Limit the height of the modal */
+    position: relative; /* Allow for positioning of child elements */
+  }
+  
+  /* Title */
+  .changePic h2 {
+    margin-bottom: 15px;
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #333;
+  }
+  
+  /* Buttons styling */
+  .changePic button {
+    cursor: pointer;
+    font-weight: bold;
+    padding: 12px 20px;
+    font-size: 1rem;
+    border-radius: 6px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin-bottom: 12px;
+    width: 100%; /* Make buttons span full width */
+    border: 1px solid #ddd;
+  }
+  
+  .changePic button:hover {
+    background-color: #f9f9f9;
+    transform: scale(1.05);
+  }
+  
+  .upload-btn {
+    background-color: #1ea1f7;
+    color: #fff;
+  }
+  
+  .upload-btn:hover {
+    background-color: #1793d1;
+  }
+  
+  .remove-btn {
+    background-color: #ed4956;
+    color: #fff;
+  }
+  
+  .remove-btn:hover {
+    background-color: #d4423f;
+  }
+  
+  .cancel-btn {
+    background-color: none;
+    border: none;
+    color: #333;
+    font-size: 14px;
+    text-decoration: underline;
+    cursor: pointer;
+  }
+  
+  .cancel-btn:hover {
+    color: #1ea1f7;
+  }
+  

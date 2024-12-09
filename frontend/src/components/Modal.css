@@ -1,0 +1,144 @@
+/* Dark Background Overlay */
+.darkBg {
+  background-color: rgba(0, 0, 0, 0.4);
+  width: 100vw;
+  height: 100vh;
+  z-index: 1000;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+/* Modal Centering */
+.centered {
+  position: relative;
+  width: 300px;
+  max-width: 80%;
+  background-color: #fff;
+  border-radius: 16px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  animation: scaleUp 0.3s ease-out;
+}
+
+/* Modal Container */
+.modal {
+  width: 100%;
+  background: white;
+  color: #2c3e50;
+  border-radius: 16px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Modal Header */
+.modalHeader {
+  height: 50px;
+  background-color: #f1f1f1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+}
+
+/* Heading Style */
+.heading {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 600;
+  color: #333;
+  text-align: center;
+}
+
+/* Modal Content */
+.modalContent {
+  padding: 20px;
+  font-size: 16px;
+  color: #333;
+  text-align: center;
+  line-height: 1.5;
+}
+
+/* Modal Action Buttons */
+.modalActions {
+  width: 100%;
+  padding: 10px;
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 10px;
+}
+
+/* Action Button Style */
+.logOutBtn,
+.cancelBtn {
+  font-size: 16px;
+  font-weight: 500;
+  padding: 12px 20px;
+  border-radius: 8px;
+  border: none;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+/* Log Out Button */
+.logOutBtn {
+  background-color: #e74c3c;
+  color: #fff;
+}
+
+.logOutBtn:hover {
+  background-color: #c0392b;
+  transform: translateY(-2px);
+}
+
+/* Cancel Button */
+.cancelBtn {
+  background-color: #95a5a6;
+  color: #fff;
+}
+
+.cancelBtn:hover {
+  background-color: #7f8c8d;
+  transform: translateY(-2px);
+}
+
+/* Close Button */
+.closeBtn {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  font-size: 20px;
+  color: #7f8c8d;
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.closeBtn:hover {
+  color: #e74c3c;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  0% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+  }
+}
+
+@keyframes scaleUp {
+  0% {
+      transform: scale(0.9);
+  }
+  100% {
+      transform: scale(1);
+  }
+}

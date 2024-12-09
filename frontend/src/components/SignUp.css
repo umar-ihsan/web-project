@@ -1,0 +1,82 @@
+.signUp {
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSB1lN1hGZAj0MpZ1ZoN7tt7q38JyzTvjmSMQ&usqp=CAU");
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 90vh;
+    margin: 10px 10px;
+    border-radius: 10px
+  }
+  
+  .form-container {
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  .form {
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 30px;
+    border: 1px solid rgb(129, 121, 121);
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  .signUpLogo {
+    display: block;
+    margin: 0 auto;
+    max-width: 150px;
+  }
+  
+  .loginPara {
+    color: rgba(142, 142, 142, 1);
+    font-size: 17px;
+    font-weight: 600;
+    line-height: 20px;
+    margin: 0px 40px 20px 40px;
+  }
+  
+  input {
+    padding: 10px;
+    margin: 10px 0px;
+    outline: none;
+    font-size: 16px;
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  #submit-btn {
+    background-color: #1773EA;
+    border: none;
+    border-radius: 3px;
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+    width: 100%;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  #submit-btn:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  
+  #submit-btn:not(:disabled):hover {
+    background-color: #145a8c;
+  }
+  
+  .form2 {
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  .form2 span {
+    color: blue;
+    cursor: pointer;
+  }
+  

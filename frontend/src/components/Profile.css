@@ -1,0 +1,159 @@
+/* Profile Section */
+.profile {
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #f8f8f8;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.profile-frame {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.profile-pic {
+  position: relative;
+  text-align: center;
+}
+
+.profile-pic img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 50%;
+  cursor: pointer;
+  border: 4px solid #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.profile-pic img:hover {
+  transform: scale(1.05);
+}
+
+.profile-data {
+  flex-grow: 1;
+  text-align: left;
+}
+
+.profile-data h1 {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 10px;
+  margin-left: 20px;
+}
+
+.profile-info {
+  display: flex;
+  gap: 30px;
+  font-size: 1rem;
+  color: #555;
+}
+
+.profile-info p {
+  margin: 0;
+  font-weight: 500;
+}
+
+.profile-info p span {
+  font-weight: bold;
+  color: #333;
+}
+
+/* Gallery Section */
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+}
+
+.gallery img {
+  width: calc(33.333% - 10px);
+  object-fit: cover;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Follow Button */
+.followBtn {
+  cursor: pointer;
+  font-weight: bold;
+  padding: 12px 20px;
+  border-radius: 25px;
+  font-size: 0.9rem;
+  border: none;
+  color: white;
+  background-color: #1d72b8;
+  transition: all 0.25s ease;
+  margin-left: 20px;
+}
+
+.followBtn:hover {
+  background-color: #155a8a;
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Change Profile Picture */
+.changePic {
+  background-color: rgba(0, 0, 0, 0.7);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  animation: fadeIn 0.3s ease-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.changePic div {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+.upload-btn {
+  cursor: pointer;
+  background-color: #4caf50;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  font-weight: bold;
+  border-radius: 5px;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.upload-btn:hover {
+  background-color: #388e3c;
+}
+
+.upload-btn:active {
+  transform: scale(0.98);
+}
